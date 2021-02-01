@@ -1,0 +1,48 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.selectedHeaderLink{
+  color:ivory
+}
+
+.selectedHeaderLink :hover{
+  color: ivory;
+}
+
+.right{
+  float: right;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.spinner{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height :20px;
+  border : 5px solid skyblue;
+  margin:auto;
+  border-radius:50%;
+  border-top: 5px solid blue;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
